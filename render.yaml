@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: taskchain
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn TaskChain.wsgi
+    autoDeploy: true

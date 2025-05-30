@@ -26,7 +26,7 @@ const Register = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('http://127.0.0.1:8000/api/register/', {
+      const response = await axios.post('https://taskchain-backend.onrender.com/api/usuario', {
         nome: formData.nome,
         email: formData.email,
         senha: formData.senha,
